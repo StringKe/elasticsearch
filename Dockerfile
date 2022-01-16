@@ -1,6 +1,10 @@
 ARG elasticsearch_version
 FROM docker.elastic.co/elasticsearch/elasticsearch:${elasticsearch_version}
 
+ENV elasticsearch_version=${elasticsearch_version}
+
+RUN echo ${elasticsearch_version}
+
 RUN elasticsearch-plugin install -b https://ghproxy.com/https://github.com/medcl/elasticsearch-analysis-pinyin/releases/download/v${elasticsearch_version}/elasticsearch-analysis-pinyin-${elasticsearch_version}.zip
 RUN elasticsearch-plugin install -b https://ghproxy.com/https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v${elasticsearch_version}/elasticsearch-analysis-ik-${elasticsearch_version}.zip
 
