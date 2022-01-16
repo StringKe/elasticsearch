@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>IK Analyzer 扩展配置</comment>
+	<!--用户可以在这里配置自己的扩展字典 -->
+	<entry key="ext_dict">dic/keywords_0.dic;dic/keywords_1.dic;dic/keywords_10.dic;dic/keywords_11.dic;dic/keywords_12.dic;dic/keywords_13.dic;dic/keywords_14.dic;dic/keywords_2.dic;dic/keywords_3.dic;dic/keywords_4.dic;dic/keywords_5.dic;dic/keywords_6.dic;dic/keywords_7.dic;dic/keywords_8.dic;dic/keywords_9.dic</entry>
+	 <!--用户可以在这里配置自己的扩展停止词字典-->
+	<entry key="ext_stopwords">dic/stop.dic</entry>
+ 	<!--用户可以在这里配置远程扩展字典 -->
+	<entry key="remote_ext_dict"></entry>
+ 	<!--用户可以在这里配置远程扩展停止词字典-->
+	<entry key="remote_ext_stopwords"></entry>
+</properties>
